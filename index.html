@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div id="main">
+        <div id="pokedex">
+            <p id="poke">Poke</p>
+            <p id="dex">dex</p>
+            <div id="line"></div>
+        </div>
+        <div id="list">
+            <div class="container" style="border-color:#27CB50 #9B69DA;">
+                <p id="number"><b>#001</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/001.svg" alt="bulbasaur xd">
+                <p id="name"><b>Bulbasaur</b></p>
+            </div>
+            <div class="container" style="border-color:#27CB50 #9B69DA;">
+                <p id="number"><b>#002</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/002.svg" alt="bulbasaur xd">
+                <p id="name"><b>Ivysaur</b></p>
+            </div>
+            <div class="container" style="border-color:#27CB50 #9B69DA;">
+                <p id="number"><b>#003</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/003.svg" alt="bulbasaur xd">
+                <p id="name"><b>Venusaur</b></p>
+            </div>
+            <div class="container" style="border-color:#FD4B5A;">
+                <p id="number"><b>#004</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/004.svg" alt="bulbasaur xd">
+                <p id="name"><b>Charmander</b></p>
+            </div>
+            <div class="container" style="border-color:#FD4B5A;">
+                <p id="number"><b>#005</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/005.svg" alt="bulbasaur xd">
+                <p id="name"><b>Charmaleon</b></p>
+            </div>
+            <div class="container" style="border-color:#FD4B5A #94B2C7;">
+                <p id="number"><b>#006</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/006.svg" alt="bulbasaur xd">
+                <p id="name"><b>Charizard</b></p>
+            </div>
+            <div class="container" style="border-color:#85A8FB;">
+                <p id="number"><b>#007</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/007.svg" alt="bulbasaur xd">
+                <p id="name"><b>Squirtle</b></p>
+            </div>
+            <div class="container" style="border-color:#85A8FB;">
+                <p id="number"><b>#008</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/008.svg" alt="bulbasaur xd">
+                <p id="name"><b>Wartortle</b></p>
+            </div>
+            <div class="container" style="border-color:#85A8FB;">
+                <p id="number"><b>#009</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/009.svg" alt="bulbasaur xd">
+                <p id="name"><b>Blastoise</b></p>
+            </div>
+            <div class="container" style="border-color:#3C9950;">
+                <p id="number"><b>#010</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/010.svg" alt="bulbasaur xd">
+                <p id="name"><b>Caterpie</b></p>
+            </div>
+            <div class="container" style="border-color:#3C9950;">
+                <p id="number"><b>#011</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/011.svg" alt="bulbasaur xd">
+                <p id="name"><b>Metapod</b></p>
+            </div>
+            <div class="container" style="border-color:#3C9950 #94B2C7;">
+                <p id="number"><b>#012</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/012.svg" alt="bulbasaur xd">
+                <p id="name"><b>Butterfree</b></p>
+            </div>
+            <div class="container" style="border-color:#3C9950 #9B69DA;">
+                <p id="number"><b>#013</b></p>
+                <img class="pkmn" src="https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/013.svg" alt="bulbasaur xd">
+                <p id="name"><b>Weedle</b></p>
+            </div>
+        </div>
+        
+    </div>
+    <div id="filter"></div>
+    <div id="search"></div>
+    <div id="pkbll_sup">
+        <div id="red"></div>
+        <div id="black_circle"></div>
+        <div id="black_stripe"></div>
+        <div id="white_circle"></div>
+    </div>
+    <div id="pkbll_inf">
+        <div id="white"></div>
+        <div id="black_circle"></div>
+        <div id="black_stripe"></div>
+        <div id="white_circle"></div>
+    </div>
+    <script>
+        var sup_pkbll = document.getElementById("pkbll_sup");
+        var inf_pkbll = document.getElementById("pkbll_inf");
+        window.addEventListener("load",function(){
+            sup_pkbll.classList.add("animatepl");
+            inf_pkbll.classList.add("animatepl");
+            setTimeout(()=> {
+                sup_pkbll.remove();
+                inf_pkbll.remove();
+            }
+            ,3000);
+        })
+    </script> 
+    
+</body>
+</html>
