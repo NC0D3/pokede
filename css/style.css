@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    display: block;
+    overflow-x: hidden;
+    font-family: 'Oswald';
+    font-style: normal;
+}
+/*preloader*/
+#pkbll_sup{
+    display: block;
+    padding-left: auto;
+    padding-right: auto;
+    height: 50vh;
+    width: 100%;
+    top:0px;
+    text-align: center;
+    position: fixed;
+    transition: all 2s ease-in-out;
+    transition-delay: 1s;
+}
+
+#pkbll_sup.animatepl{
+    top:-400px;
+}
+
+#pkbll_inf{
+    display: block;
+    padding-left: auto;
+    padding-right: auto;
+    height: 50vh;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    position: fixed;
+    transition: all 2s ease-in-out;
+    transition-delay: 1s;
+}
+
+#pkbll_inf.animatepl{
+    bottom:-400px;
+}
+
+#pkbll_sup #red {
+    background: #D14138;
+    height: 50vh;
+    width: 100%;
+    position: fixed;
+}
+
+#pkbll_sup #black_stripe {
+    background: #000;
+    height: 3vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+#pkbll_sup #black_circle {
+    background: #000;
+    height: 140px;
+    width: 280px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin: 0 0 0 -140px;
+    border-radius: 12rem 12rem 0 0;
+}
+#pkbll_sup #white_circle {
+    background: #fff;
+    height: 80px;
+    width: 160px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin: 0 0 0 -80px;
+    border-radius: 12rem 12rem 0 0;
+}
+
+#pkbll_inf #white {
+    background: #fff;
+    height: 50vh;
+    width: 100%;
+    position: fixed;
+}
+
+#pkbll_inf #black_stripe {
+    background: #000;
+    height: 3vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+#pkbll_inf #black_circle {
+    background: #000;
+    height: 140px;
+    width: 280px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: 0 0 0 -140px;
+    border-radius: 0 0 12rem 12rem;
+}
+#pkbll_inf #white_circle {
+    background: #fff;
+    height: 80px;
+    width: 160px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: 0 0 0 -80px;
+    border-radius: 0 0 12rem 12rem;
+}
+
+/*main*/
+#main{
+    position: relative;
+    background-color:#2E94A3 ;
+    width: 100%;
+    height: 1000px;
+    display: block;
+}
+
+/*titulo*/
+#pokedex{
+    position: relative;
+    width: 280px;
+    height: 145px;
+    top: 0px;
+    left: 50%;
+    margin: 0 0 0 -140px;
+}
+
+#pokedex #line{
+    position: absolute;
+    width: 126px;
+    height: 0px;
+    background-color: #2E94A3;
+    left: 100px;
+    bottom: 69px;
+    border: 9px solid #2E94A3;
+    transform: rotate(109deg);
+}
+
+#pokedex #poke{
+    position: absolute;
+    width: 323.78px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 148px;
+
+    color: #D14138;
+}
+
+#pokedex #dex{
+    position: absolute;
+    width: 323.78px;
+    height: 130.35px;
+    left: 155px;
+    top: 30px;
+    margin: 0;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 148px;
+
+    color: #fff;
+}
+
+/*lista*/
+#list{
+    position: relative;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*contenedor*/
+#list .container{
+    width: 200px;
+    height: 200px;
+    background-color: #B8F6FF;
+    border-radius: 50px;
+    margin:10px;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .05s;
+    color: #2E94A3;
+}
+.container #number{
+    margin: 3px;
+}
+.container #name{
+    margin: 3px;
+}
+.container .pkmn{
+    width: 150px;
+    max-width: 170px;
+    height: 140px;
+    max-height: 140px;
+    margin: 0;
+}
+
+#list .container:hover{
+    cursor: pointer;
+    color: #000;
+
+}
+
