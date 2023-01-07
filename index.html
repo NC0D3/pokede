@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>Pokedex</title>
+</head>
+<body>
+    <div id="main">
+        <div id="pokedex">
+            <p id="poke">Poke</p>
+            <p id="dex">dex</p>
+            <div id="line"></div>
+        </div>
+        <div id="list">
+        </div>
+        
+    </div>
+    <div id="filter"></div>
+    <div id="search"></div>
+    <div id="pkbll_sup">
+        <div id="red"></div>
+        <div id="black_circle"></div>
+        <div id="black_stripe"></div>
+        <div id="white_circle"></div>
+    </div>
+    <div id="pkbll_inf">
+        <div id="white"></div>
+        <div id="black_circle"></div>
+        <div id="black_stripe"></div>
+        <div id="white_circle"></div>
+    </div>
+    <script>
+        var sup_pkbll = document.getElementById("pkbll_sup");
+        var inf_pkbll = document.getElementById("pkbll_inf");
+        window.addEventListener("load",function(){
+            sup_pkbll.classList.add("animatepl");
+            inf_pkbll.classList.add("animatepl");
+            setTimeout(()=> {
+                sup_pkbll.remove();
+                inf_pkbll.remove();
+            },3000);
+        });
+    </script> 
+
+    <script>
+        let text = '{ "pokimons" : [' +
+            '{ "name":"Bulbasaur" , "colors":"#27CB50 #9B69DA","number":"001" },' +
+            '{ "name":"Ivysaur" , "colors":"#27CB50 #9B69DA","number":"002" },' +
+            '{ "name":"Venusaur" , "colors":"#27CB50 #9B69DA","number":"003" },' +
+            '{ "name":"Charmander" , "colors":"#FD4B5A","number":"004" },' +
+            '{ "name":"Charmaleon" , "colors":"#FD4B5A","number":"005" },' +
+            '{ "name":"Charizard" , "colors":"#FD4B5A #94B2C7","number":"006" },' +
+            '{ "name":"Squirtle" , "colors":"#85A8FB","number":"007" },' +
+            '{ "name":"Wartortle" , "colors":"#85A8FB","number":"008" },' +
+            '{ "name":"Blastoise" , "colors":"#85A8FB","number":"009" },' +
+            '{ "name":"Caterpie" , "colors":"#3C9950","number":"010" },' +
+            '{ "name":"Metapod" , "colors":"#3C9950","number":"011" },' +
+            '{ "name":"Butterfree" , "colors":"#3C9950 #94B2C7","number":"012" },' +
+            '{ "name":"Weedle" , "colors":"#3C9950 #9B69DA","number":"013" },' +
+            '{ "name":"Kakuna" , "colors":"#3C9950 #9B69DA","number":"014" },' +
+            '{ "name":"Beedrill" , "colors":"#3C9950 #9B69DA","number":"015" },' +
+            '{ "name":"Pidgey" , "colors":"#CA98A6 #94B2C7","number":"016" },' +
+            '{ "name":"Pidgeotto" , "colors":"#CA98A6 #94B2C7","number":"017" },' +
+            '{ "name":"Pidgeot" , "colors":"#CA98A6 #94B2C7","number":"018" },' +
+            '{ "name":"Rattata" , "colors":"#CA98A6","number":"019" },' +
+            '{ "name":"Raticate" , "colors":"#CA98A6","number":"020" }]}';
+        const obj = JSON.parse(text);
+        var list = document.getElementById("list");
+        for (var i = 0; i < 20; i++) {
+            pokimon="<div class='container' style='border-color:"+obj.pokimons[i].colors+";'><p id='number'><b>#"+obj.pokimons[i].number+"</b></p><img class='pkmn' src='https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/"+obj.pokimons[i].number+".svg' alt='bulbasaur xd'><p id='name'><b>"+obj.pokimons[i].name+"</b></p></div>";
+            list.innerHTML=list.innerHTML+ pokimon;
+        }
+    </script> 
+
+    
+</body>
+</html>
