@@ -9,6 +9,7 @@
     <title>Pokedex</title>
 </head>
 <body>
+
     <div id="main">
         <div id="pokedex">
             <p id="poke">Poke</p>
@@ -16,6 +17,37 @@
             <div id="line"></div>
         </div>
         <div id="list">
+            <div class='container' style='border-color: #000 #fff;'>
+                <div class="info">
+                    <p>ñikipa xd</p>
+                </div>
+                <div class="mini">
+                    <p id='number'><b>#021</b></p>
+                    <img class='pkmn' src='https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/020.svg' alt='pokemon chafa'>
+                    <p id='name'><b>pokemon chafa</b></p>
+                </div>
+                <div class="info">
+                    <p>este pokemon es chido xddddd</p>
+                    <div class="close"></div>
+                </div>    
+            </div>
+
+            <div class='container' style='border-color: #000 #fff;'>
+                <div class="info">
+                    <p>ñikipa xd</p>
+                </div>
+                <div class="mini">
+                    <p id='number'><b>#021</b></p>
+                    <img class='pkmn' src='https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/020.svg' alt='pokemon chafa'>
+                    <p id='name'><b>pokemon chafa</b></p>
+                </div>
+                <div class="info">
+                    <p>este pokemon es chido xddddd</p>
+                    <div class="close"></div>
+                </div>    
+            </div>
+                
+            
         </div>
         
     </div>
@@ -33,6 +65,11 @@
         <div id="black_stripe"></div>
         <div id="white_circle"></div>
     </div>
+
+    <script>
+        
+    </script>
+
     <script>
         var sup_pkbll = document.getElementById("pkbll_sup");
         var inf_pkbll = document.getElementById("pkbll_inf");
@@ -48,34 +85,88 @@
 
     <script>
         let text = '{ "pokimons" : [' +
-            '{ "name":"Bulbasaur" , "colors":"#27CB50 #9B69DA","number":"001" },' +
-            '{ "name":"Ivysaur" , "colors":"#27CB50 #9B69DA","number":"002" },' +
-            '{ "name":"Venusaur" , "colors":"#27CB50 #9B69DA","number":"003" },' +
-            '{ "name":"Charmander" , "colors":"#FD4B5A","number":"004" },' +
-            '{ "name":"Charmaleon" , "colors":"#FD4B5A","number":"005" },' +
-            '{ "name":"Charizard" , "colors":"#FD4B5A #94B2C7","number":"006" },' +
-            '{ "name":"Squirtle" , "colors":"#85A8FB","number":"007" },' +
-            '{ "name":"Wartortle" , "colors":"#85A8FB","number":"008" },' +
-            '{ "name":"Blastoise" , "colors":"#85A8FB","number":"009" },' +
-            '{ "name":"Caterpie" , "colors":"#3C9950","number":"010" },' +
-            '{ "name":"Metapod" , "colors":"#3C9950","number":"011" },' +
-            '{ "name":"Butterfree" , "colors":"#3C9950 #94B2C7","number":"012" },' +
-            '{ "name":"Weedle" , "colors":"#3C9950 #9B69DA","number":"013" },' +
-            '{ "name":"Kakuna" , "colors":"#3C9950 #9B69DA","number":"014" },' +
-            '{ "name":"Beedrill" , "colors":"#3C9950 #9B69DA","number":"015" },' +
-            '{ "name":"Pidgey" , "colors":"#CA98A6 #94B2C7","number":"016" },' +
-            '{ "name":"Pidgeotto" , "colors":"#CA98A6 #94B2C7","number":"017" },' +
-            '{ "name":"Pidgeot" , "colors":"#CA98A6 #94B2C7","number":"018" },' +
-            '{ "name":"Rattata" , "colors":"#CA98A6","number":"019" },' +
-            '{ "name":"Raticate" , "colors":"#CA98A6","number":"020" }]}';
+            '{ "name":"Bulbasaur","colors":"#27CB50 #9B69DA","number":"001","type":"grass poison"},' +
+            '{ "name":"Ivysaur" , "colors":"#27CB50 #9B69DA","number":"002","type":"grass poison"},' +
+            '{ "name":"Venusaur" , "colors":"#27CB50 #9B69DA","number":"003","type":"grass poison"},' +
+            '{ "name":"Charmander" , "colors":"#FD4B5A","number":"004","type":"fire"},' +
+            '{ "name":"Charmaleon" , "colors":"#FD4B5A","number":"005","type":"fire"},' +
+            '{ "name":"Charizard" , "colors":"#FD4B5A #94B2C7","number":"006","type":"fire flying"},' +
+            '{ "name":"Squirtle" , "colors":"#85A8FB","number":"007","type":"water"},' +
+            '{ "name":"Wartortle" , "colors":"#85A8FB","number":"008","type":"water"},' +
+            '{ "name":"Blastoise" , "colors":"#85A8FB","number":"009","type":"water "},' +
+            '{ "name":"Caterpie" , "colors":"#3C9950","number":"010","type":"bug"},' +
+            '{ "name":"Metapod" , "colors":"#3C9950","number":"011","type":"bug"},' +
+            '{ "name":"Butterfree" , "colors":"#3C9950 #94B2C7","number":"012","type":"bug flying"},' +
+            '{ "name":"Weedle" , "colors":"#3C9950 #9B69DA","number":"013","type":"bug poison"},' +
+            '{ "name":"Kakuna" , "colors":"#3C9950 #9B69DA","number":"014","type":"bug poison"},' +
+            '{ "name":"Beedrill" , "colors":"#3C9950 #9B69DA","number":"015","type":"bug poison"},' +
+            '{ "name":"Pidgey" , "colors":"#CA98A6 #94B2C7","number":"016","type":"normal flying"},' +
+            '{ "name":"Pidgeotto" , "colors":"#CA98A6 #94B2C7","number":"017","type":"normal flying"},' +
+            '{ "name":"Pidgeot" , "colors":"#CA98A6 #94B2C7","number":"018","type":"normal flying"},' +
+            '{ "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},' +
+            '{ "name":"Raticate" , "colors":"#CA98A6","number":"020","type":"normal"}]}';
         const obj = JSON.parse(text);
         var list = document.getElementById("list");
         for (var i = 0; i < 20; i++) {
-            pokimon="<div class='container' style='border-color:"+obj.pokimons[i].colors+";'><p id='number'><b>#"+obj.pokimons[i].number+"</b></p><img class='pkmn' src='https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/"+obj.pokimons[i].number+".svg' alt='bulbasaur xd'><p id='name'><b>"+obj.pokimons[i].name+"</b></p></div>";
+            pokimon="<div class='container "+obj.pokimons[i].type+"' style='border-color:"+obj.pokimons[i].colors+";'>"+
+                "<div class='info'>"+
+                    "<p>ñikipa xd</p>"+
+                "</div>"+
+                "<div class='mini'>"+
+                    "<p id='number'><b>#"+obj.pokimons[i].number+"</b></p>"+
+                    "<img class='pkmn' src='https://raw.githubusercontent.com/MiguelBusta/Pokedex/main/"+obj.pokimons[i].number+".svg' alt='"+obj.pokimons[i].name+"'>"+
+                    "<p id='name'><b>"+obj.pokimons[i].name+"</b></p>"+
+                "</div>"+
+                "<div class='info'>"+
+                    "<p>este pokemon es chido xddddd</p>"+
+                    "<div class='close'></div>"+
+                "</div>"+
+            "</div>";
             list.innerHTML=list.innerHTML+ pokimon;
         }
     </script> 
 
+    <script>
+        const contenedor = document.querySelectorAll('.container');
+
+        function hideDivs(e) {
+            e.currentTarget.classList.add("clicked");
+            e.currentTarget.classList.remove("non_clicked");
+            contenedor.forEach(conti => {
+                if (!(e.currentTarget === conti)) {
+                    //conti.style.display="none";   
+                }
+            });
+            e.stopPropagation();
+        }
+
+        contenedor.forEach(element => element.addEventListener('click', hideDivs));
+
+        const cerrado = document.querySelectorAll('.close');
+        function showDivs(e) {
+            console.log(document.querySelector('.clicked'));
+            document.querySelector('.clicked').classList.add('non_clicked');
+            document.querySelector('.clicked').classList.remove('clicked');
+            setTimeout(function () {
+                contenedor.forEach(conti => {
+                    conti.style.display="";      
+                });
+            }, 700);
+            e.stopPropagation();
+        }
+        cerrado.forEach(element => element.addEventListener('click', showDivs));
+    </script>
+    <!--agregar la clase clicked cuando se da click a un pokemon para ampliarlo y mostrar la informacion, ocultar todos los demas para 
+    mejorar el rendimiento
+
+    quitar la clase clicked y mostrar todos los demas cuando se cierre la interfaz de informacion
+
+    agregar clases de tipo de pokemon y con los filtros hacer que se oculten aquellos que no son de esa clase, cada que se clickee un
+    simbolo se va a agregar la clase clicked y se va a agregar o quitar elementos de un arreglo que se comparara para el filtrado de la informacion
+
+    agregar tabla de fuerte-debil
+
+    agregar menu de busqueda con actualizacion en vivo -->
     
 </body>
 </html>
