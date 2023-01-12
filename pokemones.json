@@ -18,16 +18,5 @@
             { "name":"Pidgeotto" , "colors":"#CA98A6 #94B2C7","number":"017","type":"normal flying"},
             { "name":"Pidgeot" , "colors":"#CA98A6 #94B2C7","number":"018","type":"normal flying"},
             { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Rattata" , "colors":"#CA98A6","number":"019","type":"normal"},
-            { "name":"Raticate" , "colors":"#CA98A6","number":"020","type":"normal"}]}
+            { "name":"Raticate" , "colors":"#CA98A6","number":"020","type":"normal"},
+            { "name":"Spearrow" , "colors":"#CA98A6 #94B2C7","number":"021","type":"normal flying"},]}
